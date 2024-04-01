@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    min-height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 6vw;
+}
+#nav h3{
+    letter-spacing: 3px;
+    font-size: 3vw;
+    font-weight: 400;
+    font-family: "Anurati";
+    text-transform: uppercase;
+}
+#nav #list{
+    width: 35%;
+    display: flex;
+    gap:6vw;
+}
+#list a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+#nav button{
+    padding: .7vw 3vw;
+    background-color: #222831;
+    color: #EEEEEE;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size:1vw;
+}
+#nav #navbuttons i{
+    display: none;
+}
+#nav button:hover{
+    color:#eeeeeece ;
+}
+#home{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+}
+#left{
+    width: 35%;
+    min-height: inherit;
+    padding: 5vw;
+}
+#text{
+    position: absolute;
+    width: 80%;
+    right: 8%;
+}
+#text h2{
+    font-size: 4.5vw;
+}
+#text p{
+    width: 30%;
+    margin: 3vw 0;
+}
+#text button{
+    width: 15%;
+    padding: 1vw;
+    background-color: #90D26D;
+    color: #2C7865;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5% ;
+    font-weight: 700;
+    font-size: 1vw;
+}
+#text button:hover{
+    font-size: 1.02vw;
+}
+#center{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1564622598035-61122bd729ef?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#right{
+    padding: 5vw;
+    width: 25%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#right #circle{
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3vw;
+}
+
+#loc .cols{
+    margin-top: 20px;
+}
+.cols h5{
+    letter-spacing: 1.5px;
+    font-size: 1.8vw;
+}
+.cols h6{
+    opacity: .4;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+}
+#icons{
+    display: flex;
+    width: 10vw;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+#icons :hover{  
+    background-color: #0000003c;
+}
+@media(max-width:600px){
+    #nav #list{
+        display:none;
+    }
+    #nav #navbuttons{
+        display: flex;
+        gap:7vw;
+        padding:2vw ;
+    }
+    #navbuttons button{
+        font-size: 1.5vw;
+    }
+    #nav #navbuttons i{
+        display: inline;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #home #left{
+        position: static;
+        min-height: 35vh;
+        width: 100%;
+    }
+    #left h2{
+        font-size: 7vw;
+        line-height: .9;
+    }
+    #left p{
+        line-height: 1;
+        width: 70%;
+    }
+    #left button{
+        width: 20%;
+        font-size: 1.8vw;
+    }
+    #home #center{
+        min-height:50vh;
+        width: 80%;
+        margin: 0 10vw;
+        background-position: center;
+    }
+    #home #right{
+        width: 100%;
+        min-height: 40vh;
+        margin: 5vw 5w;
+    }
+    #right #circle{
+        width: 15vw;
+        height: 15vh;
+    }
+    #right #loc .cols h5{
+        font-size: 2.5vw;
+    }
+    #right #loc .cols h6{
+        margin-top: 1vw;
+        font-size:2vw;
+    }
+    #right #icons{
+        margin-top: 2vw;
+        width: 18vw;
+    }
+
+}
